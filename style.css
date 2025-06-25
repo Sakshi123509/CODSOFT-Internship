@@ -24,8 +24,12 @@ nav {
   justify-content: space-between;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
 }
+nav h1 {
+  font-family: Great vibes;
+  color: rgb(0, 0, 0);
+  font-size: 37px;
+}
 .logo img {
-  margin: 9px;
   width: 120px;
   height: auto;
   border-radius: 100%;
@@ -337,11 +341,11 @@ span {
   border-radius: 60%;
   display: block; /* removes extra spacing */
 }
-.phone{
-  font-size: 2px;
+.info span {
+  font-size: 15px;
   background-color: beige;
 }
-.hidden{
+.hidden {
   display: none;
 }
 .success-msg {
@@ -350,4 +354,258 @@ span {
   text-align: center;
   padding: 20px;
   transition: all 0.5s ease;
+}
+nav i {
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  color: black;
+}
+/* //responsive */
+.menu-toggle {
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #e67e22;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.dropdown-menu a {
+  text-decoration: none;
+  color: #c0392b;
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mobile devices (up to 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: 80px;
+    padding: 10px 0;
+  }
+  .logo {
+    margin-left: 0px;
+    width: 30px;
+    height: auto;
+    text-align: center;
+  }
+  .logo img {
+    text-align: center;
+    width: 60px;
+    height: auto;
+  }
+  nav h1 {
+    font-size: 20px;
+  }
+  .part2 {
+    display: none;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .part2 a {
+    font-size: 1.5rem;
+  }
+  .part2 i {
+    display: block;
+  }
+  #main {
+    flex-direction: column;
+    padding-top: 110px;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+    padding-left: 0;
+  }
+
+  .hero-text span {
+    font-size: 40px;
+  }
+
+  .hero-text p,
+  .hero-text button {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .hero-img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .menu-preview {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 90%;
+    margin: auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .photo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .photo img {
+    border-radius: 50%;
+  }
+
+  .contact-info p {
+    font-size: 16px;
+  }
+}
+
+/* Tablets (768px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .part2 a {
+    font-size: 1.8rem;
+  }
+
+  .hero-text h1 {
+    font-size: 45px;
+  }
+
+  .menu-preview {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .photo {
+    width: 220px;
+    height: 220px;
+  }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo img {
+      width: 30px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  color: #e67e22;
+  cursor: pointer;
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .part2 {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px 30px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    gap: 0px;
+    height: 200px;
+    justify-content: space-evenly;
+  }
+
+  .part2.active {
+    display: flex;
+    z-index: 1001;
+  }
+
+  .part2 h3 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 80px;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
 }
