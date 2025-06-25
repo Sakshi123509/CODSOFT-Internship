@@ -1,0 +1,353 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asap:ital,wght@0,100..900;1,100..900&family=Baloo+Bhai+2:wght@400..800&family=Italianno&family=Lora:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic+Expanded+One&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Yatra+One&display=swap'); */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins";
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff5e1;
+}
+/* //navbar */
+nav {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  z-index: 1000;
+  align-items: center;
+  background-color: #fff;
+  padding-bottom: 5px;
+  position: fixed;
+  justify-content: space-between;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05); /* Soft shadow */
+}
+.logo img {
+  margin: 9px;
+  width: 120px;
+  height: auto;
+  border-radius: 100%;
+  background-size: contain;
+}
+.part2 {
+  display: flex;
+  gap: 70px;
+  margin-right: 0.8rem;
+}
+.part2 a {
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #e67e22;
+  font-family: Great vibes;
+}
+.part2 a:hover {
+  color: #c0392b;
+}
+
+/* hero section */
+#main {
+  background-image: url(./components/heroimg.jpg);
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.hero-text {
+  flex: 1;
+  /* position: relative; */
+}
+
+.hero-text h1 {
+  font-size: 58px;
+  line-height: 70px;
+  letter-spacing: 3px;
+  z-index: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 19px;
+  color: #b22222;
+  line-height: 1.2;
+  margin: 0;
+  /* position: relative; */
+}
+span {
+  color: #e67e22;
+  font-size: 62px;
+  font-weight: 800;
+  font-family: "lato";
+}
+.hero-text p {
+  padding-left: 20px;
+  font-size: 20px;
+  color: #ffffff90;
+  max-width: 20rem;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.hero-text button {
+  margin-left: 25px;
+  padding: 12px 25px;
+  font-size: 19px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #a93226;
+}
+.hero-img {
+  width: 70%;
+  left: 30%;
+  overflow: hidden;
+}
+.hero-img img {
+  object-fit: contain;
+  height: calc(100% - 100px);
+  width: 100%;
+  z-index: 1;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* //menu  */
+
+.menu-heading {
+  padding: 14px;
+}
+.menu-heading h2 {
+  color: #b22222;
+  text-align: center;
+  font-size: 50px;
+  font-family: lora;
+  font-weight: 700;
+}
+.menu-preview {
+  height: 70rem;
+  width: 100%;
+  background: linear-gradient(to left, #e67e22, #a93226);
+  display: flex;
+}
+.left {
+  width: 50%;
+  height: 100%;
+}
+
+.left h1 {
+  margin-top: 12px;
+  text-align: center;
+  font-family: Great Vibes;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+.left .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.left .box-img {
+  height: 250px;
+  width: 350px;
+  border-radius: 45px;
+  margin: 12px;
+  overflow: hidden; /* 🔑 this keeps image inside the box */
+}
+
+.left .box-img img {
+  width: 100%;
+  object-position: bottom;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* removes extra spacing */
+}
+.box-text {
+  color: #fff3e6;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100%;
+}
+.right h1 {
+  margin-top: 12px;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Great Vibes;
+  margin-bottom: 30px;
+}
+.right .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.right .box-img {
+  height: 250px;
+  width: 350px;
+  border-radius: 60px;
+  margin: 12px;
+}
+.box-text h3 {
+  font-size: 20px;
+}
+.box-text p {
+  font-size: 20px;
+}
+.right .box-img img {
+  width: 100%;
+  object-position: bottom;
+  height: 100%;
+  border-radius: 45px;
+  object-fit: cover; /* 🔑 this makes the image fill box proportionally */
+  display: block; /* removes extra spacing */
+}
+
+/* //About */
+.about-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(to right, #0e0000, #341919);
+  height: 50rem;
+  color: #ffffff;
+}
+
+.about-image img {
+  object-fit: contain;
+  width: 82%;
+  margin-left: 14px;
+}
+.about-text h2 {
+  margin-bottom: 21px;
+  font-size: 4rem;
+  font-family: Great Vibes;
+  color: #e74c3c;
+  font-weight: 700;
+}
+.about-text p {
+  font-size: 22px;
+  font-family: lora;
+  color: #ffffff90;
+}
+/* //contact */
+#Contact h2 {
+  color: #b22222;
+  text-align: center;
+  font-size: 50px;
+  font-family: lora;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 14px;
+}
+.contact-section {
+  background: linear-gradient(to left, #e67e22, #a93226);
+}
+.contact-section p {
+  text-align: center;
+  padding-top: 16px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #e0e0e0;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 40%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  padding: 12px;
+  border: none;
+  background-color: #fae5d3; /* soft orange */
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #f7c58a;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  color: #f0f0f0;
+}
+
+.contact-info h3 {
+  font-size: 44px;
+  color: #000000;
+  font-family: Great vibes;
+  margin-bottom: 10px;
+}
+
+.contact-info .nam {
+  font-size: 30px;
+  font-weight: 800;
+  font-family: lora;
+}
+.contact-info p {
+  line-height: 18px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30rem;
+}
+.photo {
+  height: 250px;
+  width: 290px;
+}
+.photo img {
+  width: 100%;
+  object-position: bottom;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 60%;
+  display: block; /* removes extra spacing */
+}
+.phone{
+  font-size: 2px;
+  background-color: beige;
+}
+.hidden{
+  display: none;
+}
+.success-msg {
+  font-family: Great vibes;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
