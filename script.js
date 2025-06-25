@@ -36,7 +36,7 @@ gsap.from("#menu h2", {
     scrollTrigger: {
         trigger: "#menu",
         scroller: "body",
-        markers: true, // optional
+        markers: false, // optional
         start: "top 60%",
         toggleActions: "play none none none"
     }
@@ -50,7 +50,7 @@ var p = gsap.timeline({
         scroller: "body",
         start: "top 70%", // adjust as needed
         toggleActions: "play none none none",
-        markers: true, // remove in production
+        markers: false, // remove in production
     }
 })
 p.from(".about-image img", {
@@ -74,7 +74,7 @@ gsap.from("#Contact h2", {
     scrollTrigger: {
         trigger: "#Contact",
         scroller: "body",
-        markers: true, // optional
+        markers: false, // optional
         start: "top 60%",
         toggleActions: "play none none none"
     }
@@ -89,7 +89,7 @@ var p = gsap.timeline({
         scroller: "body",
         start: "top 70%", // adjust as needed
         toggleActions: "play none none none",
-        markers: true, // remove in production
+        markers: false, // remove in production
     }
 })
 p.from(".left .box1", {
@@ -132,3 +132,33 @@ form.addEventListener("submit", function (e) {
     form.classList.add("hidden"); // ✅ hide form
     msg.classList.remove("hidden");
 });
+
+ 
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navbarLinks = document.getElementById("navbarLinks");
+    let isMenuOpen = false;
+
+    if (!toggleBtn || !navbarLinks) {
+        console.error("❌ Toggle button or menu container not found.");
+        return;
+    }
+
+    toggleBtn.addEventListener("click", function () {
+        if (!isMenuOpen) {
+            navbarLinks.classList.add("active");
+            gsap.fromTo(navbarLinks, { x: 200, opacity: 0 }, { x: 0, opacity: 1, duration: 0.5 });
+        } else {
+            gsap.to(navbarLinks, {
+                x: 200,
+                opacity: 0,
+                duration: 0.4,
+                onComplete: () => {
+                    navbarLinks.classList.remove("active");
+                },
+            });
+        }
+        isMenuOpen = !isMenuOpen;
+    });
+});
+
