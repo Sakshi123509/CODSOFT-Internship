@@ -16,14 +16,19 @@
   </head>
   <body>
     <nav>
-      <div class="logo" style="display: flex; align-items: center;"><img src= logo.png alt="" />
-      <h1 style="font-family: Great vibes; color: rgb(0, 0, 0); font-size: 37px;">Tadka <br>Junction</h1></div>
-      <div class="part2">
+      <div class="logo" style="display: flex; align-items: center;"><img src=logo.png alt="" />
+      <h1 >Tadka <br>Junction</h1></div>
+       <div class="menu-toggle " onclick="toggleMenu()">
+        <i class="ri-menu-3-line"></i>
+     </div>
+      <div class="part2" id="navbarLinks">
         <h3><a href="#main">Home</a></h3>
         <h3><a href="#menu">Menu</a></h3>
         <h3><a href="#About">About</a></h3>
         <h3><a href="#Contact">Contact_Us</a></h3>
+        
       </div>
+     
     </nav>
     <div id="main">
       <div class="hero-text">
@@ -37,7 +42,7 @@
           Indulge in the rich taste of India, crafted with age-old recipes,
           aromatic spices, and a pinch of love — only at Tadka Junction.
         </p>
-        <button class="hidden" onclick="location.href='#menu'">Explore Now</button>
+        <button onclick="location.href='#menu'">Explore Now</button>
       </div>
       <div class="hero-img">
         <img src= heroimg.jpg alt="" />
@@ -53,7 +58,7 @@
 
           <div class="box box1">
             <div class="box-img">
-              <img src=kajukatli.jpg alt="" />
+              <img src= kajukatli.jpg alt="" />
             </div>
             <div class="box-text">
               <h3>kaju-Katli</h3>
@@ -62,7 +67,7 @@
           </div>
           <div class="box box2">
             <div class="box-img">
-              <img src=sweet.jpg alt="" />
+              <img src= sweet.jpg alt="" />
             </div>
             <div class="box-text">
               <h3>Gulab Jamun</h3>
@@ -72,7 +77,7 @@
           <div class="box box3">
             <div class="box-img">
               <img
-                src=barfi.jpg
+                src= barfi.jpg
                 alt=""
                 style="object-position: center"
               />
@@ -88,7 +93,7 @@
           <h1 class="heading">Desi tadka</h1>
           <div class="box box1">
             <div class="box-img">
-              <img src=delicious.jpg alt="" />
+              <img src= delicious.jpg alt="" />
             </div>
             <div class="box-text">
               <h3>Kaju Rice</h3>
@@ -97,7 +102,7 @@
           </div>
           <div class="box box2">
             <div class="box-img">
-              <img src=puribhaji.jpg alt="" />
+              <img src= puribhaji.jpg alt="" />
             </div>
             <div class="box-text">
               <h3>Puri bhaji</h3>
@@ -175,15 +180,14 @@
            <div class="info"> <h3 style="text-align: center;">Visit   Us</h3>
             <p class="nam">Tadka Junction</p>
          <br/> 123 Hingna Road, Nagpur, India
-         <br/><span class="phone">📞</span> +91 9356934562
-         <br/> <span class="phone">📧</span> contact@tadkajunction.in
+         <br/><span class="phone">📞</span> <a href="tel:+919356934562" style="color: #ffff;">+91 9356934562</a>
+         <br/> <span class="phone">📧</span> <a href="mailto:contact@tadkajunction.in" style="color: #ffff;">contact@tadkajunction.in</a>
          <br/> <span class="phone">🕒</span> Open Daily: 11 AM – 11 PM</p></div>
           </div>
         </div>
       </div>
     </section>
-  </body>
-     <script
+         <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
       integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
       crossorigin="anonymous"
@@ -196,4 +200,27 @@
       referrerpolicy="no-referrer"
     ></script>
   <script src="script.js"></script>
+  </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
