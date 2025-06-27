@@ -447,9 +447,10 @@ nav i {
   }
 
   .hero-text p,
-  .hero-text button {
+ {
     padding-left: 0;
     margin-left: 0;
+   text-align: center;
   }
 
   .hero-img {
