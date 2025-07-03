@@ -24,7 +24,7 @@ The landing page is designed for a fictional restaurant called **Tadka Junction*
 
 
 ## 🔗 Live Demo
-[🌐 View Live Website]([https://sakshi123509.github.io/CODSOFT-Internship/](https://sakshi123509.github.io/CODSOFT_Internship_TASK_1/))
+[🔗 View Live Website](https://sakshi123509.github.io/CODSOFT_Internship_TASK_1/)
 
 
 ## 🎥 Demo Video  
